@@ -1,0 +1,17 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "ts",
+    "ignore": [
+        "src/**/*.spec.ts"
+    ],
+    "exec": "ts-node -r tsconfig-paths/register src/main.ts",
+    "env": {
+        "EXPIRES_IN": "3600",
+        "SECRET_OR_KEY": "secret",
+        "BI_LOGIN": "bi-login",
+        "BI_PASS": "bi-pass",
+        "ENABLE_AUTH": "0"
+      }
+}

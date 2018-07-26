@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceRoot}/src/main.ts",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "skipFiles": [
+                "${workspaceRoot}/node_modules/**/*.js"
+            ],
+            "outFiles": [
+                "${workspaceRoot}/dist/**/*.js"
+            ],
+            "stopOnEntry": false,
+            "console": "internalConsole",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "preLaunchTask": "compile",
+            "sourceMaps": true,
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "address": "localhost",
+            "port": 5858,
+            "outFiles": []
+        }
+    ]
+}

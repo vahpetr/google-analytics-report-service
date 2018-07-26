@@ -1,0 +1,8 @@
+Dockerfile
+README.md
+.vscode
+node_modules
+*.yml
+*.yaml
+nodemon.json
+.editorconfig

@@ -2,6 +2,19 @@
 
 Google analytics report service.
 
+## Install
+
+1. Create google analytics web `key.json`. Set a redirect URL to `http://localhost:5500/oauth2callback`.
+1. Create `secrets` directory in the project root. `mkdir secrets'.
+1. Rename `client_secret_*.json` to `key.json` and move key to `secrets` folder.
+1. Add read-only permission to access on your Google account.
+1. Run authorization script and select your Google account.
+
+    ```bash
+    npm run get:credentials
+    ```
+> Script must create 'credentials.json' in `secrets` folder.
+
 ## Run
 
 ```bash
@@ -116,11 +129,4 @@ npm run test:e2e
 
 # test coverage
 npm run test:cov
-```
-
-## Update credentials
-
-```bash
-npm run get:credentials
-# callback localhost:5500
 ```
